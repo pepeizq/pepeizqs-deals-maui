@@ -1,5 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
-using static pepeizqs_deals_maui.MainPage;
+using static pepeizqs_deals_maui.Paginas.Portada;
 
 namespace pepeizqs_deals_maui.Noticias
 {

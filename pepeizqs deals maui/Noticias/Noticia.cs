@@ -1,4 +1,6 @@
-﻿public class Noticia
+﻿#nullable disable
+
+public class Noticia
 {
 	public int Id { get; set; }
 	public int Tipo { get; set; }

@@ -65,4 +65,28 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Update="Paginas\Portada.xaml.cs">
+	    <DependentUpon>Portada.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Resources\Traducciones\Recursos.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Recursos.resx</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Update="Resources\Traducciones\Recursos.resx">
+	    <Generator>ResXFileCodeGenerator</Generator>
+	    <LastGenOutput>Recursos.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Paginas\Bundles.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>

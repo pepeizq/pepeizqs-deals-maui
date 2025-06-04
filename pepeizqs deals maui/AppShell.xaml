@@ -4,11 +4,31 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:pepeizqs_deals_maui"
-    Title="pepeizqs_deals_maui">
+    xmlns:paginas="clr-namespace:pepeizqs_deals_maui.Paginas"
+    xmlns:strings="clr-namespace:pepeizqs_deals_maui.Resources.Traducciones"
+    
+    Title="pepeizq's deals">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <Shell.Resources>
+        <Style TargetType="TabBar">
+            <Setter Property="Shell.BackgroundColor" Value="{StaticResource fondoOscuro}"/>
+            <Setter Property="Shell.TitleColor" Value="{StaticResource colorTexto}"/>
+        </Style>
+    </Shell.Resources>
+
+    <TabBar>
+        <Tab Title="{x:Static strings:Recursos.TopBar1}">
+            <ShellContent
+                ContentTemplate="{DataTemplate paginas:Portada}"
+                Route="Portada"> 
+            </ShellContent>
+        </Tab>
+        <Tab Title="{x:Static strings:Recursos.TopBar2}">
+            <ShellContent
+                ContentTemplate="{DataTemplate paginas:Bundles}"
+                Route="Bundles">
+            </ShellContent>
+        </Tab>
+    </TabBar>
 
 </Shell>

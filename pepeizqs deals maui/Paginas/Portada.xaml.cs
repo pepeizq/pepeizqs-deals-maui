@@ -1,10 +1,10 @@
 ﻿using System.Data.SqlClient;
 
-namespace pepeizqs_deals_maui
+namespace pepeizqs_deals_maui.Paginas
 {
-    public partial class MainPage : ContentPage
+    public partial class Portada : ContentPage
     {
-        public MainPage()
+        public Portada()
         {
             InitializeComponent();
 
